@@ -24,11 +24,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       minlength: [6, "Password must be at least 6 characters"],
     },
-    phone: {
-      type: String,
-      required: true,
-      match: [/^[0-9]{10}$/, "Please enter a valid 10-digit phone number"],
-    },
+    // phone: {
+    //   type: String,
+    //   required: true,
+    //   match: [/^[0-9]{10}$/, "Please enter a valid 10-digit phone number"],
+    // },
   },
   { timestamps: true }
 );
